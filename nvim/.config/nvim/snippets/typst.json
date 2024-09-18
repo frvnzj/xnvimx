@@ -1,0 +1,14 @@
+{
+  "apafig + figapa": {
+    "body": [
+      "#figure(",
+      "  image(\"${1:pathimg}\", width: 80%),",
+      "  caption: [${2:Descripción}],",
+      ") <${3:etiquetaref}>"
+    ],
+    "prefix": [
+      "apafig",
+      "figapa"
+    ]
+  }
+}

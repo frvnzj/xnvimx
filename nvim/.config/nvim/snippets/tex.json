@@ -1,0 +1,142 @@
+{
+  "acapa + apaac": {
+    "body": "\\acrodef{${1:acronimo}}[${2:corto}]{${3:largo}}",
+    "prefix": [
+      "acapa",
+      "apaac"
+    ]
+  },
+  "acenvapa + apaenvac": {
+    "body": [
+      "\\section{Acrónimos}",
+      "",
+      "\\begin{acronym}%[ingresa acrónimo más largo para corregir margen]",
+      "\\acro{${1:acronym}}[${2:corto}]{${3:largo}}",
+      "\\eng{acronym}"
+    ],
+    "prefix": [
+      "acenvapa",
+      "apaenvac"
+    ]
+  },
+  "apalattab + tablatapa": {
+    "body": [
+      "\\begin{table}[h]",
+      "  \\caption{${1:Título}}\\label{${2:etiqueta de referencia}}",
+      "\t\\centering",
+      "",
+      "\t% NOTE: {l c r} alinear texto izq/cent/der. El núm. de letras determina el núm. de colúmnas.",
+      "\t\\begin{tabular}{>{\\columncolor{gris}\\color{blanco}}l >{\\columncolor{blanco}}c >{\\columncolor{blanco}}r} \\toprule",
+      "\t\tItem 1 & Subitem 1 & Subitem 2 \\\\",
+      "\t\tItem 2 & Subitem 1 & Subitem 2 \\\\",
+      "\t\tItem 3 & Subitem 1 & Subitem 2 \\\\",
+      "\t\tItem 4 & Subitem 1 & Subitem 2 \\\\ \\bottomrule",
+      "\t\\end{tabular}",
+      "\t% \\caption*{NOTE:\\ Aquí va información adicional de la tabla}",
+      "\\end{table}"
+    ],
+    "prefix": [
+      "apalattab",
+      "tablatapa"
+    ]
+  },
+  "apalonglat + latlongapa": {
+    "body": [
+      "\\begin{table}[h]",
+      "\t\\caption{${1:Título}}\\label{${2:etiqueta de referencia}}",
+      "\t\\begin{longtable}{>{\\columncolor{gris}\\color{blanco}}l >{\\columncolor{blanco}}c >{\\columncolor{blanco}}r} \\toprule",
+      "\t\tItem 1 & Subitem 1 & Subitem 2 \\\\",
+      "\t\tItem 2 & Subitem 1 & Subitem 2 \\\\",
+      "\t\tItem 3 & Subitem 1 & Subitem 2 \\\\",
+      "\t\tItem 4 & Subitem 1 & Subitem 2 \\\\ \\bottomrule",
+      "\t\\end{longtable}",
+      "\t% \\caption*{NOTE:\\ Aquí va información adicional de la tabla}",
+      "\\end{table}"
+    ],
+    "prefix": [
+      "apalonglat",
+      "latlongapa"
+    ]
+  },
+  "apalongtab + tablongapa": {
+    "body": [
+      "\\begin{table}[h]",
+      "\t\\caption{${1:Título}}\\label{${2:etiqueta de referencia}}",
+      "",
+      "\t\\rowcolors{2}{lavanda}{blanco} \\arrayrulecolor{negro} % color filas",
+      "",
+      "\t% NOTE: {l c r} alinear texto izq/cent/der. El núm. de letras determina el núm. de colúmnas.",
+      "\t\\begin{longtable}{l c r} \\toprule",
+      "",
+      "\t\t\\rowcolor{gris} %color fila encabezado",
+      "",
+      "\t\t\\textcolor{blanco}{Item 1} & \\textcolor{blanco}{Item 1} & \\textcolor{blanco}{Item 1} \\\\ \\midrule",
+      "\t\t% NOTE: Si el encabezado ocupa todas las columnas usa la siguiente línea en lugar de la primera",
+      "\t\t% \\multicolumn{3}{c}{\\textcolor{blanco}{Encabezado}}    \\\\ \\midrule",
+      "\t\t% NOTE: Si el encabezado ocupa multicolúmnas del lado izquierdo usa la siguiente línea en lugar de la primera",
+      "\t\t% \\multicolumn{2}{c}{\\textcolor{blanco}{Encabezado}} \\\\ \\cmidrule(r){1-2}",
+      "\t\t% NOTE: Si el encabezado ocupa multicolúmnas del lado derecho usa la siguiente línea en lugar de la primera",
+      "\t\t% &  \\multicolumn{2}{c}{\\textcolor{blanco}{Encabezado}} \\\\ \\cmidrule(l){2-3}",
+      "",
+      "\t\tSubitem 1                  & Subitem 1                  & Subitem 1                  \\\\",
+      "\t\tSubitem 2                  & Subitem 2                  & Subitem 2                  \\\\",
+      "\t\tSubitem 3                  & Subitem 3                  & Subitem 3                  \\\\",
+      "\t\tSubitem 4                  & Subitem 4                  & Subitem 4                  \\\\ \\bottomrule",
+      "\t\\end{longtable}",
+      "\t% \\caption*{NOTE:\\ Aquí va información adicional de la tabla}",
+      "\\end{table}"
+    ],
+    "prefix": [
+      "apalongtab",
+      "tablongapa"
+    ]
+  },
+  "apatab + tabapa": {
+    "body": [
+      "\\begin{table}[h]",
+      "\t\\caption{${1:Título}}\\label{${2:etiqueta para referencia}}",
+      "",
+      "\t\\centering",
+      "\t\\rowcolors{2}{lavanda}{blanco} \\arrayrulecolor{negro} % color filas",
+      "",
+      "\t% NOTE: {l c r} alinear texto izq/cent/der. El núm. de letras determina el núm. de colúmnas.",
+      "\t\\begin{tabular}{l c r} \\toprule",
+      "",
+      "\t\t\\rowcolor{gris} %color fila encabezado",
+      "",
+      "\t\t\\textcolor{blanco}{Item 1} & \\textcolor{blanco}{Item 1} & \\textcolor{blanco}{Item 1} \\\\ \\midrule",
+      "\t\t% NOTE: Si el encabezado ocupa todas las columnas usa la siguiente línea en lugar de la primera",
+      "\t\t% \\multicolumn{3}{c}{\\textcolor{blanco}{Encabezado}}    \\\\ \\midrule",
+      "\t\t% NOTE: Si el encabezado ocupa multicolúmnas del lado izquierdo usa la siguiente línea en lugar de la primera",
+      "\t\t% \\multicolumn{2}{c}{\\textcolor{blanco}{Encabezado}} \\\\ \\cmidrule(r){1-2}",
+      "\t\t% NOTE: Si el encabezado ocupa multicolúmnas del lado derecho usa la siguiente línea en lugar de la primera",
+      "\t\t% &  \\multicolumn{2}{c}{\\textcolor{blanco}{Encabezado}} \\\\ \\cmidrule(l){2-3}",
+      "",
+      "\t\tSubitem 1                  & Subitem 1                  & Subitem 1                  \\\\",
+      "\t\tSubitem 2                  & Subitem 2                  & Subitem 2                  \\\\",
+      "\t\tSubitem 3                  & Subitem 3                  & Subitem 3                  \\\\",
+      "\t\tSubitem 4                  & Subitem 4                  & Subitem 4                  \\\\ \\bottomrule",
+      "\t\\end{tabular}",
+      "\t% \\caption*{NOTE:\\ Aquí va información adicional de la tabla}",
+      "\\end{table}"
+    ],
+    "prefix": [
+      "apatab",
+      "tabapa"
+    ]
+  },
+  "imgapa + apaimg": {
+    "body": [
+      "\\begin{figure}[H]",
+      "  \\centering",
+      "  \\caption{${1:NameImg}}\\label{fig:${2:labelref}}",
+      "  \\includegraphics[width=0.8\\textwidth]{${3:pathimg}}",
+      "  % \\caption*{NOTE: Aquí va información adicional de la imágen.}",
+      "\\end{figure}"
+    ],
+    "prefix": [
+      "imgapa",
+      "apaimg"
+    ]
+  }
+}

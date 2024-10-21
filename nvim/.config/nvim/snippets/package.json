@@ -12,6 +12,12 @@
           "typst"
         ],
         "path": "./typst.json"
+      },
+      {
+        "language": [
+          "bib"
+        ],
+        "path": "./bib.json"
       }
     ]
   },

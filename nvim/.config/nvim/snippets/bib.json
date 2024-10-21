@@ -1,0 +1,17 @@
+{
+  "bookapa + apabook": {
+    "body": [
+      "@Book{${1:key},",
+      "  author       = \"${2:autor}\",",
+      "  title        = \"${3:título}\",",
+      "  publisher    = \"${4:editorial}\",",
+      "  year         = \"${5:año}\",",
+      "  address      = \"${6:lugar}\",",
+      "}"
+    ],
+    "prefix": [
+      "bookapa",
+      "apabook"
+    ]
+  }
+}

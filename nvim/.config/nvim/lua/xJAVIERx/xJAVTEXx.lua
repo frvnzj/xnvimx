@@ -15,7 +15,9 @@ function M.config()
 % GFS Didot [GFSDidot](default), IM FELL English[IMFELLEnglish], Kerkis[Kerkis], Times New Roman[TNR].
 \usepackage{xJAVx-apa7}
 
-\addbibresource{~/Documentos/LaTeX/refs.bib}
+% \usepackage{csquotes}
+% \usepackage[style=apa]{biblatex}
+% \addbibresource{~/Documentos/LaTeX/refs.bib}
 
 % \hypersetup{
 % 	pdftitle={<++>},
@@ -47,6 +49,31 @@ function M.config()
 % \printbibliography
 \end{document}
         ]],
+      },
+      book = {
+        name = "Book",
+        content = [[
+\documentclass[12pt,twoside]{book}
+
+\usepackage[margin=1in]{geometry}
+% Font option: Arial[Arial], Carlito[Carlito], Droid Serif[Droid],
+% GFS Didot [GFSDidot](default), IM FELL English[IMFELLEnglish], Kerkis[Kerkis], Times New Roman[TNR].
+\usepackage{xJAVx-book}
+
+% \usepackage{csquotes}
+% \usepackage[style=apa]{biblatex}
+% \addbibresource{~/Documentos/LaTeX/refs.bib}
+
+\definecolor{blanco}{RGB}{239, 241, 245}
+\definecolor{lavanda}{RGB}{186, 187, 241}
+
+
+\begin{document}
+
+
+
+\end{document}
+        ]]
       },
       presentation = {
         name = "Presentation",
